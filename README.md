@@ -1,73 +1,47 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Ryan's Nestjs Fast Starter
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-nestjs-tsnode)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Setting Stack
+- Environment : node
+- Framework : nestjs
+- database : mongoDB
+- orm : mongoose
+- type : typescript
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
+## Project Start
+1. nodemon 설치
+```
+$ npm install -g nodemon
+```
+2. clone & dependencies 설치
+```
+$ git clone ryan-ahn/boilerplate-backend-express
+$ cd boilerplate-backend-express
 $ npm install
 ```
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+2. environment 설정
+```
+.env 파일 추가하기
+PORT, MONGODB_DEV_URL, MONGODB_PROD_URL, DEV_ROOT_ORIGIN, PROD_ROOT_ORIGIN 입력하기
+```
+4. server 시작하기
+```
+$ npm run dev
 ```
 
-## Test
+## Code Pattern
+- Routes + Controllers + Services 패턴을 따름
+- Express에서 지원하지 않는 Typescript를 사용하기 위해 TS-Node가 필요
+- ESLint + StyleLint + Prettier 포메터 조합
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+## Code Structure
+&nbsp;⎣&nbsp;**config** - config 설정 <br/>
+&nbsp;⎣&nbsp;**controllers** - 에러 핸들링 <br/>
+&nbsp;⎣&nbsp;**interfaces** - database model, schema, request & response type 코드 등 <br/>
+&nbsp;⎣&nbsp;**loaders** - database 연결 <br/>
+&nbsp;⎣&nbsp;**modules** - utils, handler, hooks 등 <br/>
+&nbsp;⎣&nbsp;**services** - 비즈니스 로직 <br/>
