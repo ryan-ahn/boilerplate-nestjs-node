@@ -1,4 +1,5 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
+import { IPostTestBodyData } from './interfaces';
 
 @Controller('sample')
 export class SampleController {
@@ -8,21 +9,21 @@ export class SampleController {
     return 'Hello Ryan!!';
   }
 
-  // Get Params Api
+  // Get Params Data Api
   @Get('test/:id')
   getParamsIdApi(@Param('id') id: string) {
     return `This is Params ID : ${id}`;
   }
 
-  // Post Api
-  @Post('test')
-  postTestApi() {
-    return 'Hello Ryan!!';
+  // Get Query Data Api
+  @Get('test')
+  getQueryDataApi(@Query('search') search: string) {
+    return `This is Query Data: ${search}`;
   }
 
-  // Post Body Api
+  // Post Body Data Api
   @Post('test')
-  postBodyApi(@Body() IBodyData) {
+  postBodyApi(@Body() IBodyData: IPostTestBodyData) {
     return `This is Body Data : ${IBodyData}`;
   }
 }
