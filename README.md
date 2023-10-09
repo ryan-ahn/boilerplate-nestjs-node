@@ -2,41 +2,33 @@
 
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-nestjs-tsnode)
+![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-nestjs-server)
 
 ## Setting Stack
 - Environment : node
 - Framework : nestjs
-- database : mongoDB
-- orm : mongoose
+- database : mySQL
+- orm : typeORM
 - type : typescript
 
 ## Project Start
-1. nodemon 설치
+1. nestjs 설치
 ```
-$ npm install -g nodemon
+$ npm install -g @nestjs/cli
 ```
 2. clone & dependencies 설치
 ```
-$ git clone ryan-ahn/boilerplate-backend-express
-$ cd boilerplate-backend-express
+$ git clone ryan-ahn/boilerplate-nestjs-server
+$ cd boilerplate-nestjs-server
 $ npm install
 ```
-
-2. environment 설정
+3. server 시작하기
 ```
-.env 파일 추가하기
-PORT, MONGODB_DEV_URL, MONGODB_PROD_URL, DEV_ROOT_ORIGIN, PROD_ROOT_ORIGIN 입력하기
-```
-4. server 시작하기
-```
-$ npm run dev
+$ npm run start:dev
 ```
 
 ## Code Pattern
 - Routes + Controllers + Services 패턴을 따름
-- Express에서 지원하지 않는 Typescript를 사용하기 위해 TS-Node가 필요
-- ESLint + StyleLint + Prettier 포메터 조합
 
 ## Code Structure
 &nbsp;⎣&nbsp;**config** - config 설정 <br/>
