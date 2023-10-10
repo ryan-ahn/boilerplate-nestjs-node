@@ -31,9 +31,10 @@ $ npm run start:dev
 - Routes + Controllers + Services 패턴을 따름
 
 ## Code Structure
-&nbsp;⎣&nbsp;**config** - configuration <br/>
-&nbsp;⎣&nbsp;**providers** - aws, cache, database, elasticsearch 등 <br/>
-&nbsp;⎣&nbsp;**auth** - 인증 관련 <br/>
-&nbsp;⎣&nbsp;**common** - 공통 모듈 등 <br/>
-&nbsp;⎣&nbsp;**modules** - 서비스 모듈 등 <br/>
-&nbsp;⎣&nbsp;**test** - jest <br/>
+- Test(jest)
+- Root(src)
+- &nbsp;⎣&nbsp;**config** - configuration <br/>
+- &nbsp;⎣&nbsp;**providers** - aws, cache, database, elasticsearch 등 <br/>
+- &nbsp;⎣&nbsp;**auth** - 인증 관련 <br/>
+- &nbsp;⎣&nbsp;**common** - 공통 모듈 등 <br/>
+- &nbsp;⎣&nbsp;**modules** - 서비스 모듈 등 <br/>
