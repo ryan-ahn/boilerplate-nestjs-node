@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate-nestjs-node",
+  "name": "boilerplate-nestjs-server",
   "version": "0.0.1",
   "description": "ryan's boiler plate",
   "author": "github.com/ryan-ahn",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
