@@ -31,9 +31,9 @@ $ npm run start:dev
 - Routes + Controllers + Services 패턴을 따름
 
 ## Code Structure
-&nbsp;⎣&nbsp;**config** - config 설정 <br/>
-&nbsp;⎣&nbsp;**controllers** - 에러 핸들링 <br/>
-&nbsp;⎣&nbsp;**interfaces** - database model, schema, request & response type 코드 등 <br/>
-&nbsp;⎣&nbsp;**loaders** - database 연결 <br/>
-&nbsp;⎣&nbsp;**modules** - utils, handler, hooks 등 <br/>
-&nbsp;⎣&nbsp;**services** - 비즈니스 로직 <br/>
+&nbsp;⎣&nbsp;**config** - configuration <br/>
+&nbsp;⎣&nbsp;**providers** - aws, cache, database, elasticsearch 등 <br/>
+&nbsp;⎣&nbsp;**auth** - 인증 관련 <br/>
+&nbsp;⎣&nbsp;**common** - 공통 모듈 등 <br/>
+&nbsp;⎣&nbsp;**modules** - 서비스 모듈 등 <br/>
+&nbsp;⎣&nbsp;**test** - jest <br/>
