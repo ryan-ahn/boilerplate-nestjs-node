@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
-import { IPostTestBodyData } from './interfaces';
+import { IPostTestBodyData } from './sample.interface';
 
 @Controller('sample')
 export class SampleController {
