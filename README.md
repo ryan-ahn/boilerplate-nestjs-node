@@ -9,8 +9,8 @@
 ## Setting Stack
 - Environment : node
 - Framework : nestjs
-- database : mySQL
-- orm : typeORM
+- database : mySQL, mongoDB
+- orm : typeORM, mongoose
 - type : typescript
 
 
