@@ -1,8 +1,10 @@
 # Ryan's Nestjs Fast Starter
 
+
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-nestjs-server)
+![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/npm-nestjs-starter)
+
 
 ## Setting Stack
 - Environment : node
@@ -11,24 +13,21 @@
 - orm : typeORM
 - type : typescript
 
+
 ## Project Start
-1. nestjs 설치
+1. Install nestjs
 ```
 $ npm install -g @nestjs/cli
 ```
-2. clone & dependencies 설치
+2. Install Project
 ```
-$ git clone ryan-ahn/boilerplate-nestjs-server
-$ cd boilerplate-nestjs-server
-$ npm install
+$ npx type-nestjs-starter
 ```
 3. server 시작하기
 ```
 $ npm run start:dev
 ```
 
-## Code Pattern
-- Routes + Controllers + Services 패턴을 따름
 
 ## Code Structure
 - Test(jest)
