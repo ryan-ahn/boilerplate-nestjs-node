@@ -17,27 +17,32 @@
   ],
   "extends": [
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
     "plugin:import/recommended",
+    "plugin:prettier/recommended",
     "eslint:recommended",
+    "airbnb-typescript",
     "airbnb"
   ],
   "rules": {
     // 충돌 방지
-    "new-cap": "off",
-    "no-plusplus": "off",
-    "no-console": "off",
-    "no-debugger": "warn",
-    "no-unused-vars": "off",
-    "no-empty-function": "off",
-    "no-useless-constructor": "off",
-    "no-underscore-dangle": "off",
-    "class-methods-use-this": "off",
-    "operator-linebreak": "off",
-    "import/no-unresolved": "off",
-    "import/prefer-default-export": "off",
-    "import/no-extraneous-dependencies": "off",
-    "@typescript-eslint/no-explicit-any": "off",
+    "camelcase": "off", // model에서 camelCase 사용 가능
+    "indent": "off", // prettier 사용
+    "new-cap": "off", // 생성자 이름 대문자 사용 가능
+    "no-plusplus": "off", // for문에서 i++ 사용 가능
+    "no-console": "off", // console.log 사용 가능
+    "no-debugger": "warn", // debugger 사용 가능
+    "no-underscore-dangle": "off", // _ 사용 가능
+    "no-useless-constructor": "off", // constructor 선언용
+    "no-empty-function": "off", // constructor 선언용 
+    "operator-linebreak": "off", // prettier 사용
+    "lines-between-class-members": "off", // class 멤버 사이 빈 줄 사용
+    "class-methods-use-this": "off", // class method에서 this 사용 안하기
+    "import/extensions": "off", // import 확장자 사용 안하기
+    "import/no-unresolved": "off", // import 경로 오류 끄기
+    "import/prefer-default-export": "off", // export default 사용 안하기
+    "import/no-extraneous-dependencies": "off", // devDependencies 사용 끄기
+    "@typescript-eslint/no-explicit-any": "off", // error는 any 사용 가능
+    "@typescript-eslint/indent": "off", // prettier 사용
     // import 순서
     "import/order": [
       "error",
@@ -52,17 +57,6 @@
         "alphabetize": {
           "order": "desc"
         }
-      }
-    ],
-    // import 확장자 제거
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
       }
     ],
     // 에러 처리
@@ -80,6 +74,6 @@
         "exports": "always-multiline",
         "functions": "always-multiline"
       }
-    ]
+    ],
   }
 }
