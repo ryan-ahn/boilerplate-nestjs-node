@@ -11,7 +11,7 @@
     "url": "https://github.com/ryan-ahn/npm-nestjs-starter.git"
   },
   "license": "MIT",
-  "bin": "./bin/npm.js",
+  "bin": "./bin/npm.mjs",
   "description": "Start a Node Nestjs TypeScript project in few second!",
   "keywords": [
     "node",
@@ -24,7 +24,7 @@
     "boilerplate"
   ],
   "private": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "scripts": {
     "dev": "nest start --watch",
     "build": "nest build",
