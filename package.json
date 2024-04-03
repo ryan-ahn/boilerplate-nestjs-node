@@ -23,7 +23,7 @@
     "boilerplate"
   ],
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "dev": "nest start --watch",
     "build": "nest build",
