@@ -8,22 +8,24 @@
 
 ## Setting Stack
 - Environment : node
-- Framework : nestjs
-- database : mySQL, mongoDB
-- orm : typeORM, mongoose
-- type : typescript
+- Framework : Nestjs
+- Database : MySQL, MongoDB
+- ORM, ODM : TypeORM, Mongoose
+- Type : Typescript
+- Lint : ESLint(airbnb)
 
 
 ## Project Start
-1. Install nestjs
+1. Install Nestjs
 ```
 $ npm install -g @nestjs/cli
 ```
 2. Install Project
 ```
-$ npx type-nestjs-starter
+$ npx type-nestjs-starter my-project
+$ cd my-project
 ```
-3. server 시작하기
+3. Server Start
 ```
 $ npm run start:dev
 ```

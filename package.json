@@ -1,7 +1,29 @@
 {
   "name": "type-nestjs-starter",
-  "private": true,
-  "version": "0.0.1",
+  "author": {
+    "name": "ryan-ahn",
+    "email": "kaaiinn4@gmail.com",
+    "url": "https://github.com/ryan-ahn"
+  },
+  "homepage": "https://github.com/ryan-ahn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryan-ahn/npm-nestjs-starter.git"
+  },
+  "license": "MIT",
+  "description": "Start a Node Nestjs TypeScript project in few second!",
+  "keywords": [
+    "node",
+    "nestjs",
+    "mysql",
+    "mongodb",
+    "typeOrm",
+    "typescript",
+    "eslint",
+    "boilerplate"
+  ],
+  "private": false,
+  "version": "1.0.2",
   "scripts": {
     "dev": "nest start --watch",
     "build": "nest build",
@@ -17,6 +39,7 @@
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
+    "@nestjs/config": "^3.2.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
     "@types/express": "^4.17.17",
