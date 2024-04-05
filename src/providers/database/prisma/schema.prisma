@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("TC_RDS_URL")
+}
+
+model tc_payments {
+  id Int @id @default(autoincrement())
+  user_id String?
+  payment_id String?
+}
+
+model tc_user_payments {
+  id Int @id @default(autoincrement())
+  pg String?
+  payment_id String?
+}

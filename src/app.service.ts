@@ -1,16 +1,15 @@
 import { ConfigService } from '@nestjs/config';
 import { Injectable } from '@nestjs/common';
+import { SlackService } from './utils/helper/slack/slack.service';
 
 @Injectable()
 export class AppService {
-  constructor(private configService: ConfigService) {}
+  constructor(
+    private configService: ConfigService,
+    private slackService: SlackService,
+  ) {}
 
-  getHello() {
-    const host = this.configService.get<string>('API_HOST');
-    const port = this.configService.get<number>('PORT', 8000);
-    return {
-      host,
-      port,
-    };
+  getClear() {
+    return 'server clear!';
   }
 }
